@@ -4,18 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        body{
+          text-align: center; 
+          font-family: sans-serif;
+          background-color:cornsilk;
+        }
+        #btn{
+            background-color:yellow; 
+            color:black; 
+            font-weight: bold; 
+            border-radius: 15px; 
+            box-shadow: 1px 2px 5px black; 
+            border: 1px solid black; 
+            border-style:dashed; 
+            font-size: larger; 
+            padding: 10px; 
+            cursor: pointer;
+        }
+        #btn:hover{
+            transition: all 0.5s;
+            background-color:black;
+            color: yellow;
+            border: 1px solid yellow;
+            border-style: dashed;
+        }
+
+        h1{
+            background-color:yellow; 
+            color:black; 
+            border-radius: 10px;
+            box-shadow: 1px 2px 5px black;
+            border: 1px solid black; 
+            border-style: dashed; 
+            padding: 5px; 
+            width:55%; 
+            margin: 0 auto; 
+            margin-top: 10%; 
+            margin-bottom: 5%;
+        }
+        #text{
+            color:black; 
+            margin: 0 auto; 
+            margin-top: 4%;
+            margin-bottom: 5%;
+        }
+    </style>
 </head>
-<body style="text-align: center; font-family: sans-serif;">
+<body>
     
-    <h1 style="background-color:yellow; color:black; border-radius: 10px; box-shadow: 1px 2px 5px black; border: 1px solid black; border-style: dashed; padding: 5px; width:55%; margin: 0 auto; margin-top: 10%; margin-bottom: 5%;">JavaScript Password Generator</h1>
+    <h1 data-aos="fade-down">JavaScript Password Generator</h1>
     
-    <h2 style=" color:black; margin: 0 auto; margin-top: 4%; margin-bottom: 5%;">Click The Button For Generate Password 🔐</h2>
+    <h2 id="text" data-aos="zoom-in">Click The Button For Generate Password 🔐</h2>
     
-    <button style="background-color:yellow; color:black; font-weight: bold; border-radius: 15px; box-shadow: 1px 2px 5px black; border: 1px solid black; border-style:dashed; font-size: larger; padding: 10px; cursor: pointer;" onclick="PassGenerate()">Generate Password</button>
+    <button id="btn" data-aos="fade-up" onclick="PassGenerate()">Generate Password</button>
    
     <h4 style="margin-top: 10%;">CopyRight &#169; 2024 By Muhammad Hassan Raza</h4>
-
     
+    
+   
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+
     <script src="app.js"></script>
 </body>
 </html>
