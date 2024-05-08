@@ -1,0 +1,44 @@
+body{
+    text-align: center; 
+    font-family: sans-serif;
+    background-color:cornsilk;
+}
+#btn{
+    background-color:yellow; 
+    color:black; 
+    font-weight: bold; 
+    border-radius: 15px; 
+    box-shadow: 1px 2px 5px black; 
+    border: 1px solid black; 
+    border-style:dashed; 
+    font-size: larger; 
+    padding: 10px; 
+    cursor: pointer;
+}
+#btn:hover{
+    transition: all 0.5s;
+    background-color:black;
+    color: yellow;
+    border: 1px solid yellow;
+    border-style: dashed;
+}
+
+h1{
+    background-color:yellow; 
+    color:black; 
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px black;
+    border: 1px solid black; 
+    border-style: dashed; 
+    padding: 5px; 
+    width:55%; 
+    margin: 0 auto; 
+    margin-top: 11%; 
+    margin-bottom: 5%;
+}
+#text{
+    color:black; 
+    margin: 0 auto; 
+    margin-top: 4%;
+    margin-bottom: 5%;
+}
